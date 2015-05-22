@@ -35,14 +35,14 @@ $(window).load(function(){
 
 		input.focus(function(){	 
 			var time = setTimeout(function(){
-			 	$('.search-line').attr("placeholder", "Введите страну или шенген")
+			 	$('.search-line').attr("placeholder", "Введите страну или шенген");
 			},150);
 			$(document).on('click', function(){
 				clearTimeout(time);
 			});
 		});
 		input.blur(function(){			
-			$(this).attr("placeholder", "Найти визу")
+			$(this).attr("placeholder", "Найти визу");
 		});
 		input.on('click', function(e){
 			parent.addClass('is-open');
