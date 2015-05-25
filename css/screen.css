@@ -92,6 +92,7 @@ h3 {
 	color: #1f313b;
 	letter-spacing: 0.7px;
 	margin-bottom: 20px;
+	line-height: 1.3;
 }
 .article-box hr {
 	background: none repeat scroll 0 0 #cbd6d9;
@@ -2188,4 +2189,13 @@ body.modal-iframe-visible .modal-content {
 }
 #wrapper.hidden {
 	display: none;
+}
+
+
+.breadcrumbs + h2 {
+    max-width: 925px;
+}
+
+.btn-back {
+	color: #1881bf;
 }
