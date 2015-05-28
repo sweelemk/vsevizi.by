@@ -255,17 +255,15 @@ $(window).load(function(){
 	// popups
 	$(".js-popup-link").on("click", function(){
 		$(".js-popup-overlay").fadeIn(300);
-		var popup = $(this).attr("href");
-		$(".js-popup").fadeIn(300);
-		$("html").addClass("open-popup");
-		$('[data-popup="'+popup+'"]').fadeIn(300);
+		var popup = $(this).data("href");
+		$('[data-popup="'+popup+'"]').addClass('open');
 		return false; 
 	});
 
 	$(".js-popup-close, .js-popup-overlay").on("click", function(){
 		$(".js-popup-overlay").fadeOut(300); 
-		$(this).parents(".js-popup").fadeOut(300);
-		$("html").removeClass("open-popup");
+		$(".js-popup").removeClass('open');
+		$('form').trigger('reset');
 		return false;
 	});
 
@@ -330,5 +328,25 @@ $(window).load(function(){
 		clearStyle: true
 	});
 
+	//validation
+    var form_validate = $('.js-validate');
+    if (form_validate.length) {
+        form_validate.each(function () {
+        	var form_this = $(this);
+	        $.validate({
+	            form : form_this,
+	            borderColorOnError : '#fca9a5'
+            });
+        });
+    };
+    //autoresize textarea
+    if($('.item-textarea').length){
+    	var area = $('.js-resize');
+
+    	area.autoResize({
+    		extraSpace : 0,
+    		animate: true
+    	});
+    };
 });
 
