@@ -2380,3 +2380,11 @@ body.modal-iframe-visible .modal-content {
 	font-size: 15px;
 	font-family: "GothamProRegular", Arial, sans-serif;
 }
+/*end popup*/
+.breadcrumbs + .content {
+    padding: 0 0 73px;
+}
+.data-news {
+	opacity: 0.4;
+	margin-bottom: 30px;
+}
