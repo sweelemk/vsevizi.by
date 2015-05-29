@@ -1567,13 +1567,13 @@ ul.conditions {
 		width: 90%;
 	}
 }
-.addition a.fancybox {	
+.addition a {	
 	color: #1881bf;
 	letter-spacing: 0.9px;
 	margin-right: 15px;
 	line-height: 2.5;
 }
-.addition a.fancybox span {
+.addition a span {
 	-webkit-border-bottom: 1px dotted #1881bf;
 	-moz-border-bottom: 1px dotted #1881bf;
 	border-bottom: 1px dotted #1881bf;
@@ -1583,8 +1583,8 @@ ul.conditions {
 	-o-transition: all .3s ease 0s;
 	transition: all .3s ease 0s;
 }
-a.fancybox:hover,
-a.fancybox:hover span {
+.addition a:hover,
+.addition a:hover span {
 	border-color: transparent;
 }
 .slider-box {
@@ -2205,17 +2205,15 @@ body.modal-iframe-visible .modal-content {
 .popup-wrap {
 	-webkit-backface-visibility:hidden;
 	backface-visibility:hidden;
-	visibility: hidden;
-	min-width: 672px;
+	visibility: hidden;	
 	position: fixed;
 	z-index: 999;
-	left: 50%;
-	top: 190px;
-	-webkit-transform: translateX(-50%);
-	-moz-transform: translateX(-50%);
-	-ms-transform: translateX(-50%);
-	-o-transform: translateX(-50%);
-	transform: translateX(-50%);
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	overflow: auto;
+	padding: 190px 0;	
 }
 .popup-wrap.popup-end {
 	min-width: 532px;
@@ -2224,12 +2222,12 @@ body.modal-iframe-visible .modal-content {
 	visibility: visible;
 }
 .popup {
+	width: 672px;
 	background: #fff;
     -webkit-border-radius: 3px;
     border-radius: 3px;
 	display: inline-block;
 	font-size: 14px;
-	height: auto;
 	opacity: 0;
 	position: relative;
 	text-align: center;
@@ -2237,10 +2235,17 @@ body.modal-iframe-visible .modal-content {
 	-moz-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
+	top: 0px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
 	vertical-align: middle;
-	width: 100%;
 	will-change: opacity;
 	padding: 80px 70px 76px;
+	margin-bottom: 30px;
 }
 .popup-wrap .popup-close {
 	position: absolute;
@@ -2387,4 +2392,62 @@ body.modal-iframe-visible .modal-content {
 .data-news {
 	opacity: 0.4;
 	margin-bottom: 30px;
+}
+
+.text {
+	text-align: left;
+	color: #151f25;
+	font-size: 14px;
+}
+.text p {
+	line-height: 1.7;
+	margin-bottom: 20px;
+}
+.text p.description {
+	font-size: 18px;
+	
+}
+ul.list {
+	margin-bottom: 25px;
+}
+ul.list li {
+	padding-left: 30px;
+	position: relative;
+	line-height: 1.7;
+	margin-bottom: 12px;
+}
+ul.list li:before {
+	content: "";
+	width: 8px;
+	height: 8px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	position: absolute;
+	top: 6px;
+	left: 0;
+	background: #1881bf;
+	display: block;
+}
+.text a,
+.text .title-article {
+	color: #1881bf;
+}
+.text .title-article {
+	font-size: 24px;
+	margin-bottom: 20px;
+	font-family: "GothamProLight", Arial, sans-serif;
+}
+.text .title-article + ul.list {
+	margin-bottom: 40px;
+}
+.text .title-article + p {
+	font-size: 14px;
+}
+.text > img {
+	float: right;
+	margin-left: 30px;
+	margin-top: -15px;
+}
+p > strong {
+	font-size: 14px;
 }

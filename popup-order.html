@@ -321,47 +321,47 @@
 									<h3>Необходимые документы</h3>
 									<p>Виза в польшу может быть многократной или однократной, может быть туристической <br>или “за покупками” — выберите необходимую.</p>
 									<div class="docs-popup">
-										<a class="fancybox" rel="rel" href="img/500x650.gif">
+										<a class="js-popup-link" rel="rel" data-href="popup-passport">
 											<img src="img/icons/passport.jpg" alt="">
 											<div>
 												<span>Паспорт</span>
 											</div>
 										</a>
-										<a class="fancybox" rel="rel" href="img/500x650.gif">
+										<a class="js-popup-link" rel="rel" data-href="popup-reference">
 											<img src="img/icons/passport.jpg" alt="">
 											<div>
 												<span>Справка о з/п за 6 месяцев</span>
 											</div>
 										</a>
-										<a class="fancybox" rel="rel" href="img/500x650.gif">
+										<a class="js-popup-link" rel="rel" data-href="popup-foto">
 											<img src="img/icons/passport.jpg" alt="">
 											<div>
 												<span>Фото 3,5*4,5</span>
 											</div>
 										</a>
-										<a class="fancybox" rel="rel" href="img/500x650.gif">
+										<a class="js-popup-link" rel="rel" data-href="popup-purpose">
 											<img src="img/icons/passport.jpg" alt="">
 											<div>
-												<span>Польская виза цель 01</span>
+												<span>Ранее полученные визы</span>
 											</div>
 										</a>
 									</div>
 									<strong>Смотрите также:</strong>
 									<div class="addition">
-										<a class="fancybox" rel="also" href="img/500x650.gif">
+										<a class="js-popup-link" rel="also" data-href="popup-child">
 											<span>Документы для детей</span>
 										</a>
-										<a class="fancybox" rel="also" href="img/500x650.gif">
+										<a class="js-popup-link" rel="also" data-href="popup-entrepreneurs">
 											<span>Индивидуальные предприниматели</span>
 										</a>
-										<a class="fancybox" rel="also" href="img/500x650.gif">
+										<a class="js-popup-link" rel="also" data-href="popup-pensioners">
 											<span>Пенсионеры</span>
 										</a>
-										<a class="fancybox" rel="also" href="img/500x650.gif">
+										<a class="js-popup-link" rel="also" data-href="popup-students">
 											<span>Студенты</span>
 										</a>
-										<a class="fancybox" rel="also" href="img/500x650.gif">
-											<span>Граждане других стран</span>
+										<a class="js-popup-link" rel="also" data-href="popup-entities">
+											<span>Юридические лица</span>
 										</a>
 									</div>
 								</div>
@@ -736,8 +736,8 @@
 				</div>
 		</footer>
 	</section>	
-	<div class="popup-overlay js-popup-overlay" style="display: block;"></div>
-	<div data-popup="popup-order" class="popup-wrap js-popup open">
+	<div class="popup-overlay js-popup-overlay"></div>
+	<div data-popup="popup-order" class="popup-wrap js-popup">
 		<div class="popup">
 			<div class="popup-close js-popup-close"></div>
 			<div class="popup-form">
@@ -759,6 +759,172 @@
 					</div>
 					<button type="submit" class='btn-send'>Отправить</button>
 				</form>
+			</div>
+		</div>
+	</div>
+	<div data-popup="popup-passport" class="popup-wrap js-popup">
+		<div class="popup">
+			<div class="popup-close js-popup-close"></div>
+			<div class="popup-form">
+				<div class="form-title">Паспорт</div>
+				<div class="text">
+					<p class="description">Для получения шенгенской визы паспорт должен отвечать следующим требованиям:</p>
+					<ul class="list">
+						<li>Паспорт должен быть действителен в течение 3-х месяцев после предполагаемого возвращения из-за границы.</li>
+						<li>Паспорт должен иметь 2-е свободные страницы с отметкой «Визы».</li>
+						<li>Паспорт должен быть не старше 10 лет.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-popup="popup-reference" class="popup-wrap js-popup">
+		<div class="popup">
+			<div class="popup-close js-popup-close"></div>
+			<div class="popup-form">
+				<div class="form-title">Cправка о з/п за 6 месяцев</div>
+				<div class="text">
+					<p class="description">Справка о заработной плате должна быть:</p>
+					<ul class="list">
+						<li>С датой выдачи.</li>
+						<li>Не старше 1-го месяца до момента подачи в Посольство.</li>
+						<li>Формата А4, на фирменном бланке организации, с печатью и подписью руководителя/бухгалтера</li>
+						<li>Выписка с карт-счета не старше 5-и календарных дней. Карт-счет на зарплатный.</li>
+					</ul>
+					<a href="/" target="_blank">Скачать образец</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-popup="popup-foto" class="popup-wrap js-popup">
+		<div class="popup">
+			<div class="popup-close js-popup-close"></div>
+			<div class="popup-form">
+				<div class="form-title">Фото</div>
+				<div class="text">
+					<div class="title-article">Краткие требования</div>
+					<ul class="list">
+						<li>2 фотографии, размер 3,5 х 4,5 см.</li>
+						<li>Не старше 3 месяцев.</li>
+					</ul>
+					<img src="img/foto-pass.jpg" alt="">
+					<div class="title-article">Полные требования</div>
+					<p>Для подачи документов на получение Шенгенской визы  консульство необходимо предоставить фотографии отвечающие следующим требованиям.</p>
+					<p class="description">Требования к фотографиям во всех посольствах одинаковые:</p>
+					<ul class="list">
+						<li>фотография цветная, четкая, чистая и размер фотографии 35 на 45 мм;</li>
+						<li>напечатанная на высококачественной бумаге на светлом фоне;</li>
+						<li>матовая или глянцевая фотобумага;</li>
+						<li>фотографии должно быть не более 6 месяцев, чтобы была возможность идентификации с заявителем;</li>
+						<li>сделанная анфас, показывающая четко глаза и лицо с обеих сторон от верхней части головы до верхней части плеч, так, чтобы лицо занимало 70-80% фотографии;</li>
+						<li>на фотографии должен быть изображен заявитель без головного убора, смотрящий прямо, с закрытым ртом; </li>
+						<li>лицо не должно быть прикрыто волосами.</li>
+					</ul>
+					<p class="description">Требования для тех, кто носит очки:</p>
+					<ul class="list">
+						<li>стекла незатемненные;</li>
+						<li>оправа не должна закрывать ни одной части глаза;</li>
+						<li>не должно быть каких-либо бликов.</li>
+					</ul>
+					<p>Желательно, чтобы фотография была свежей и <strong>не повторялась с фото в предыдущей визе!</strong> Если Ваша фотография не соответствует требованиям, посольство в праве отказать в получении визы. В этом случает лучше сделать новую фотографию</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-popup="popup-purpose" class="popup-wrap js-popup">
+		<div class="popup">
+			<div class="popup-close js-popup-close"></div>
+			<div class="popup-form">
+				<div class="form-title">Ранее полученные визы</div>
+				<div class="text">
+					<p class="description">Для получения 2-х годовой туристической визы необходимо:</p>
+					<p>Наличие 2-х шенгенских виз, выданных за последние 3-и года. Одна виза выдана Польским консульством с пометкой «cel wydania 01» (туристическая виза), вторая виза выдана любым консульством, входящим в «Шенгенское соглашение» с целью туризма.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-popup="popup-child" class="popup-wrap js-popup">
+		<div class="popup">
+			<div class="popup-close js-popup-close"></div>
+			<div class="popup-form">
+				<div class="form-title">Дети</div>
+				<div class="text">
+					<ul class="list">
+						<li>Разрешение от 2-х родителей, заверенное нотариально;</li>
+						<li>Свидетельство о рождении;</li>
+						<li>Паспорт;</li>
+						<li>Копии паспортов родителей;</li>
+						<li>Справка о доходах спонсора;</li>
+						<li>До 12-и лет консульский сбор не взимается;</li>
+						<li>Страховка.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-popup="popup-entrepreneurs" class="popup-wrap js-popup">
+		<div class="popup">
+			<div class="popup-close js-popup-close"></div>
+			<div class="popup-form">
+				<div class="form-title">ИП</div>
+				<div class="text">
+					<ul class="list">
+						<li>Оригинал и Копия свидетельства о регистрации;</li>
+						<li>Справка из банка о наличии средств;</li>
+						<li>Справка об отсутствии задолженности перед бюджетом.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-popup="popup-pensioners" class="popup-wrap js-popup">
+		<div class="popup">
+			<div class="popup-close js-popup-close"></div>
+			<div class="popup-form">
+				<div class="form-title">Пенсионеры</div>
+				<div class="text">
+					<ul class="list">
+						<li>Анкета;</li>
+						<li>Фотографии;</li>
+						<li>Паспорт;</li>
+						<li>Пенсионное удостоверение;</li>
+						<li>Подтверждение материального обеспечения (справка из банка);</li>
+						<li>Страховка.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-popup="popup-students" class="popup-wrap js-popup">
+		<div class="popup">
+			<div class="popup-close js-popup-close"></div>
+			<div class="popup-form">
+				<div class="form-title">Студенты</div>
+				<div class="text">
+					<ul class="list">
+						<li>Анкета;</li>
+						<li>Фотографии;</li>
+						<li>Паспорт;</li>
+						<li>Письмо прошение на имя консула;</li>
+						<li>Страховка.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div data-popup="popup-entities" class="popup-wrap js-popup">
+		<div class="popup">
+			<div class="popup-close js-popup-close"></div>
+			<div class="popup-form">
+				<div class="form-title">Юридические лица</div>
+				<div class="text">
+					<ul class="list">
+						<li>Приглашение от польского партнера;</li>
+						<li>Договор и копия между польской и белоруской компаниями;</li>
+						<li>Оригинал и копия свидетельства о регистрации компании;</li>
+						<li>Копия выписки и КРС польской компании.</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
